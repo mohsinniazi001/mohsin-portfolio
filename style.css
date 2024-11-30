@@ -47,10 +47,27 @@ body{
 .home{
     display: flex;
     align-items: center;
+    background: url('mohsin.png');
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: right;
     height: 100vh;
     padding: 0 10%;
 
 }
+.homeHoverimg{
+    top: 0;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+
+}
+.homeHoverimg:hover{
+    background: #081b29;
+    opacity: .8;
+}
+
 .home-content{
     max-width: 600px;
 }
