@@ -9,6 +9,7 @@
 
 body{
     background-color: #081b29;
+    color: #ededed;
 }
 
 .header{
@@ -41,4 +42,132 @@ body{
 }
 .navbar a:hover, .navbar a.active {
     color: #00abf0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 33px;
+    font-weight: 500;
+    color: #00abf0;
+
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    height: 45px;
+    /* background-color: yellowgreen; */
+}
+.btn-box a{
+    position: relative;
+    background-color: #00abf0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 100%;
+    border: 2px solid #00abf0;
+    border-radius: 7px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+}
+.btn-box a::before{
+
+    background-color: transparent;
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.btn-box a:nth-child(2){
+    background-color: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background-color: #00abf0;
+}
+
+.btn-box a::before{
+
+    content: '';
+    position: absolute;
+    background-color: #081b29;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-socicon{
+    position: absolute;
+    display: flex;
+    /* background-color: red; */
+    width: 170px;
+    bottom: 45px;
+    justify-content: space-between;
+}
+.home-socicon a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #00abf0;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+.home-socicon a::before{
+    position: absolute;
+    content: '';
+    background-color: #00abf0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.home-socicon a:hover::before{
+    width: 100%;
+}
+.home-socicon a:hover{
+    color: #081b29;
 }
